@@ -18,15 +18,6 @@ public class User {
         this.hearts = hearts;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public String setName(String name) {
-        this.name = name;
-        return name;
-    }
-
     public int getHearts() {
         return hearts;
     }
@@ -37,13 +28,25 @@ public class User {
     }
 
     public boolean checkDeath() {
-        if (hearts > 0) {
+        if (hearts >= 0) {
             return true;
-        }
+            }
         return false;
+        }
+
+
+    public String getName() {
+        return name;
     }
+
+    public String setName(String name) {
+        this.name = name;
+        return name;
+    }
+
 //    public boolean checkDeath(){
 //        return hearts > 0;
 //    }
+
 
 }
